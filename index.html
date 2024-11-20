@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Universidades Licenciadas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Consulta de Universidades Licenciadas</h1>
+
+    <div class="form">
+        <form action="cgi-bin/universidades.pl" method="post">
+            <div class="field-wrap">
+                <label for="nombre" class="active">Nombre de la Universidad:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre">
+            </div>
+
+            <div class="field-wrap">
+                <label for="licenciamiento" class="active">Periodo de Licenciamiento:</label>
+                <input type="number" id="licenciamiento" name="licenciamiento" placeholder="Ingrese el número">
+            </div>
+
+            <div class="field-wrap">
+                <label for="departamento" class="active">Departamento Local:</label>
+                <input type="text" id="departamento" name="departamento" placeholder="Ingrese el departamento">
+            </div>
+
+            <div class="field-wrap">
+                <label for="programa" class="active">Denominación del Programa:</label>
+                <input type="text" id="programa" name="programa" placeholder="Ingrese el programa">
+            </div>
+
+            <button type="submit" class="button">Consultar</button>
+        </form>
+    </div>
+
+    <div class="results">
+    </div>
+</body>
+</html>
